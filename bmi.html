@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中年腹部脂肪可能与痴呆症的早期迹象有关</title>
+  <style>
+    .nav{
+    background-color: #00157c;
+    height: 50px;
+    width: 100%;
+    /* box-shadow: 0 1px 2px #666; */
+    display: flex;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.s1{
+    float: left;
+    position: relative;
+    width: 300px;
+    line-height:  50px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+.s1 a{
+    font-weight: bold;
+}
+.navlist a{
+    color: #fff;
+    display: block;
+}
+.navlist a:hover{
+    background: #ffffff;
+    border-radius: 10px;
+    color: #00157c;
+
+}
+.droplist{
+    background: #fffcfc;
+   display: none;
+   border-radius: 10px;
+   z-index: 10;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    top: 100%;
+}
+.droplist a{
+    color: black;
+}
+.s1:hover .droplist,.droplist:hover{
+    display: block;
+}
+    
+.droplist li{
+    border-bottom: 1px solid #2f1f1f;
+}
+.main{
+  width: 60%;
+  height: auto;
+  border: none;
+  padding: 40px;
+  flex-direction: column;
+  display: flex;
+  margin: 50px auto 50px;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.mid{
+  width: 100%;
+  height: 500px;
+  overflow: hidden; 
+  position: relative;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  object-fit: cover;
+  animation: slide 9s infinite;
+}
+.slide-img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide-img:nth-child(2) {
+    animation-delay: 3s; 
+}
+
+.slide-img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes slide {
+    0%, 30% {
+        opacity: 1;
+    }
+    33%, 97% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.slider-container {
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.main h1 {
+  font-size: 2.2rem;
+  color: #00157c;
+  margin-bottom: 20px;
+}
+
+.main header p, .main header time {
+  color: #666;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.main section p {
+  margin: 20px 0;
+  color: #333;
+}
+
+.main h2 {
+  font-size: 1.8rem;
+  color: #00157c;
+  margin: 30px 0 20px;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+}
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <ul class="navlist">
+           <li class="s1" id="s1"><a href="#">首页</a><ul class="droplist">
+            <li><a href="main.html">回到首页</a></li>
+            <li><a href="wea.html">用药助手</a></li>
+            <li><a href="#">高血压</a></li>
+        </ul></li>
+           
+           <li class="s1" id="s1"><a href="#">关于</a><ul class="droplist">
+               <li><a href="#">关于我们</a></li>
+               <li><a href="#">贡献</a></li>
+               <li><a href="#">团队</a></li>
+           </ul></li>
+           <li class="s1" id="s1"><a href="#">产品</a><ul class="droplist">
+               <li><a href="#">助手</a></li>
+               <li><a href="#">药品</a></li>
+               <li><a href="#">仪器</a></li>
+           </ul></li>
+           <li class="s1" id="s1"><a href="#">活动</a><ul class="droplist">
+               <li><a href="#">优惠</a></li>
+               <li><a href="#">满减</a></li>
+               <li><a href="#">送仪器</a></li>
+           </ul></li>
+    </ul>
+   </div>
+   <div class="main">
+    <article>
+        <header>
+          <h1>高蛋白饮食：科学减重的明智之选</h1>
+          <br>
+          <p>作者: Kathleen M. Zelman, RD, LD, MPH</p>
+          <br>
+          <p>2 分钟阅读</p>
+          <time datetime="2023-03-23">2023 年 3 月 23 日</time>
+        </header>
+        <br>
+        <section>
+          <p>进行高蛋白饮食可以帮助您控制饥饿感，从而帮助您减轻体重。研究表明，适量增加蛋白质摄入可以提高新陈代谢，延长饱腹感。</p>
+    
+          <p>通过在日常饮食中逐步添加优质蛋白质，您可以更好地控制食欲。但请记住，总热量摄入仍然是减重的关键因素。在选择蛋白质来源时，应当注意营养均衡。</p>
+    
+          <p>如果您计划显著增加蛋白质摄入，特别是对于有肝肾疾病的人群，建议先咨询医生的专业意见。</p>
+        </section>
+    
+        <section>
+          <h2>最佳蛋白质来源及其营养价值</h2>
+          <p>选择营养丰富、饱和脂肪和卡路里含量较低的蛋白质来源，例如：瘦肉、海鲜、豆类、大豆、低脂乳制品、蛋类、坚果和种子。改变您的蛋白质食物来源是个好主意。</p>
+        </section>
+    
+        <section>
+          <p>以下是一些常见食物的蛋白质含量参考：</p>
+          <ul>
+            <li>3盎司去皮鸡胸肉：26克蛋白质</li>
+            <li>3盎司鱼片：17-20克蛋白质</li>
+            <li>1/2杯低脂松软干酪：12.4克蛋白质</li>
+            <li>1/2杯煮熟的扁豆：9克蛋白质</li>
+            <li>2汤匙天然花生酱：7克蛋白质</li>
+            <li>1个大鸡蛋：6克蛋白质</li>
+          </ul>
+        </section>
+      </article>
+   </div>
+   <div class="slider-container">
+     <div class="mid">
+       <img src="45.jpg" alt="图片1" class="slide-img">
+       <img src="1234.png" alt="图片2" class="slide-img">
+       <img src="R-C.jpg" alt="图片3" class="slide-img">
+     </div>
+   </div>
+  <script>
+
+  </script>
+</body>
+</html>

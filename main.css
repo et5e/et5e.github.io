@@ -1,0 +1,267 @@
+body,html{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+
+}
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.head h1 {
+    color: #00157c;
+    font-size: 1.8rem;
+}
+.more-btn {
+    background-color: #00157c;
+    color: white;
+    padding: 8px 30px;  /* 增加水平内边距 */
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 100px;   /* 添加最小宽度 */
+    text-align: center;  /* 文字居中 */
+}
+
+.more-btn:hover {
+    transform: scale(1.1);
+    background-color: #002299;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav{
+    background-color: #00157c;
+    height: 50px;
+    width: 100%;
+    /* box-shadow: 0 1px 2px #666; */
+    display: flex;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.s1{
+    float: left;
+    position: relative;
+    width: 300px;
+    line-height:  50px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+.s1 a{
+    font-weight: bold;
+}
+.navlist a{
+    color: #fff;
+    display: block;
+}
+.navlist a:hover{
+    background: #ffffff;
+    border-radius: 10px;
+    color: #00157c;
+
+}
+.droplist{
+    background: #fffcfc;
+   display: none;
+   border-radius: 10px;
+   z-index: 10;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    top: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+}
+.droplist a{
+    color: black;
+}
+.s1:hover .droplist,.droplist:hover{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+    
+.droplist li{
+    border-bottom: 1px solid #2f1f1f;
+    transition: background-color 0.3s ease;
+}
+.droplist li:hover{
+    background-color: #f8f9fa;
+}
+.head{
+    margin-top: 30px;
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    border-bottom: 1px solid #2f1f1f;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #00157c;
+}
+.main {
+    height: 400px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    margin-left: 155px;
+}
+.main:hover .content h1{
+    color: #00157c;
+}
+.main img {
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.content {
+    flex: 1;
+    color: black;
+}
+.mi{
+    width: 80%;
+    height: 50px;
+    border-bottom: 1px solid #2f1f1f;
+}
+
+.secd{
+    margin-top: 50px;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.seca{
+    width: 30%;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.seca:hover{
+    color: #00157c;
+}
+.seca img{
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.mid{
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    border-bottom: 1px solid #2f1f1f;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #00157c;
+}
+.health{
+    margin-top: 50px;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 10px;
+}
+.healtha{
+    width: 19%;
+    height: auto;
+    background-color: #666;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #fff;
+    border-radius: 15px;
+
+}
+.healtha:hover{
+    color: #00157c;
+}
+.footer {
+    width: 100%;
+    background-color: #00157c;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* 自适应宽度，最小宽度200px */
+    min-width: 200px; /* 确保每个部分至少200px宽 */
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+    transform: scale(1.1);
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}

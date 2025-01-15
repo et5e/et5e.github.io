@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中年腹部脂肪可能与痴呆症的早期迹象有关</title>
+    <style>
+        .nav{
+            background-color: #00157c;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .s1{
+            float: left;
+            position: relative;
+            width: 300px;
+            line-height: 50px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .s1 a{
+            font-weight: bold;
+        }
+        
+        .navlist a{
+            color: #fff;
+            display: block;
+        }
+        
+        .navlist a:hover{
+            background: #ffffff;
+            border-radius: 10px;
+            color: #00157c;
+        }
+        
+        .droplist{
+            background: #fffcfc;
+            display: none;
+            border-radius: 10px;
+            z-index: 10;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin-top: 0px;
+            top: 100%;
+        }
+        
+        .droplist a{
+            color: black;
+        }
+        
+        .s1:hover .droplist,.droplist:hover{
+            display: block;
+        }
+        
+        .droplist li{
+            border-bottom: 1px solid #2f1f1f;
+        }
+        
+        .main{
+            width: 60%;
+            height: auto;
+            border: none;
+            padding: 40px;
+            flex-direction: column;
+            display: flex;
+            margin: 0 auto 50px;
+            font-size: 1.5rem;
+            line-height: 1.7;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        
+        .mid{
+            width: 100%;
+            height: 500px;
+            overflow: hidden; 
+            position: relative;
+        }
+        
+        .slide-img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            object-fit: cover;
+            animation: slide 9s infinite;
+        }
+        
+        .slide-img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .slide-img:nth-child(2) {
+            animation-delay: 3s; 
+        }
+        
+        .slide-img:nth-child(3) {
+            animation-delay: 6s;
+        }
+        
+        @keyframes slide {
+            0%, 30% {
+                opacity: 1;
+            }
+            33%, 97% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .slider-container {
+            width: 60%;
+            margin: 30px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .main h1 {
+            font-size: 2.2rem;
+            color: #00157c;
+            margin-bottom: 20px;
+        }
+        
+        .main header p, .main header time {
+            color: #666;
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+        
+        .main section p {
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        .main h2 {
+            font-size: 1.8rem;
+            color: #00157c;
+            margin: 30px 0 20px;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="navlist">
+            <li class="s1" id="s1"><a href="#">首页</a><ul class="droplist">
+                <li><a href="main.html">回到首页</a></li>
+                <li><a href="wea.html">用药助手</a></li>
+                <li><a href="#">高血压</a></li>
+            </ul></li>
+            
+            <li class="s1" id="s1"><a href="#">关于</a><ul class="droplist">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">贡献</a></li>
+                <li><a href="#">团队</a></li>
+            </ul></li>
+            <li class="s1" id="s1"><a href="#">产品</a><ul class="droplist">
+                <li><a href="#">助手</a></li>
+                <li><a href="#">药品</a></li>
+                <li><a href="#">仪器</a></li>
+            </ul></li>
+            <li class="s1" id="s1"><a href="#">活动</a><ul class="droplist">
+                <li><a href="#">优惠</a></li>
+                <li><a href="#">满减</a></li>
+                <li><a href="#">送仪器</a></li>
+            </ul></li>
+        </ul>
+    </div>
+    <div class="slider-container">
+        <div class="mid">
+            <img src="45.jpg" alt="图片1" class="slide-img">
+            <img src="1234.png" alt="图片2" class="slide-img">
+            <img src="R-C.jpg" alt="图片3" class="slide-img">
+        </div>
+    </div>
+    <div class="main">
+        <article>
+            <header>
+                <h1>中年腹部脂肪可能与痴呆症的早期迹象有关</h1>
+                <br>
+                <p>作者: Lisa O'Mary</p>
+                <br>
+                <p>2 分钟阅读</p>
+                <time datetime="2024-12-03">2024 年 12 月 3 日</time>
+            </header>
+            <br>
+            <section>
+                <p>在 40 多岁和 50 多岁时腹部脂肪可能表明大脑已经生病和萎缩，从而增加以后患阿尔茨海默病的风险。</p>
+        
+                <p>研究人员能够直接将一种称为内脏脂肪的腹部脂肪与常见于痴呆症患者（包括阿尔茨海默病）患者的大脑变化联系起来。内脏脂肪是一种在器官之间和周围堆积的脂肪，会减少流向大脑的血液。</p>
+        
+                <p>这些发现将在本周于芝加哥举行的北美放射学会会议上公布。它们很重要，因为它们指出了生命早期体重管理对预防这种毁灭性疾病的重要性。</p>
+            </section>
+        
+            <section>
+                <h2>走进迷雾：与早发性阿尔茨海默病共存</h2>
+                <p>Brian Leblanc 简要介绍了早发性阿尔茨海默病的起起落落，并揭示了他如何面对诊断的命运。</p>
+            </section>
+        
+            <section>
+                <p>这项研究规模较小，包括 80 人，他们都是中年人，没有认知问题。平均年龄为 49 岁，略高于一半的参与者符合肥胖标准。研究人员使用成像来评估人们腹部、肝脏和大腿周围的脂肪类型，并寻找已知会影响阿尔茨海默病风险的大脑变化迹象，包括淀粉样蛋白斑块和 tau 缠结的证据。</p>
+            </section>
+        
+            <section>
+                <p>“据我们所知，我们的研究是唯一一项在中年证明这些发现的研究，我们的参与者距离出现阿尔茨海默病引起的痴呆症的最早症状还有几十年的时间，”Mahsa Dolatshahi，医学博士，公共卫生硕士说，他是圣路易斯华盛顿大学医学院Mallinckrodt放射研究所（MIR）的博士后研究助理。MO 在一份新闻稿中。</p>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
